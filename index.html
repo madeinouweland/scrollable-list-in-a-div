@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      html, body {
+        height: 100%;
+        margin: 0px;
+        font-family: sans-serif;
+      }
+
+      #container {
+        height: 100%;
+      }
+
+      .pane {
+        width: 50%;
+        float: left;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        height: 100%;
+      }
+
+      .border {
+        border: 1px solid #444;
+        -webkit-flex: 1 auto auto;
+        overflow-y: scroll;
+        height: 100%;
+      }
+
+      li {
+        font-size: 40px;
+      }
+
+      .error {
+        background: #900;
+        color: #fff;
+        padding: 20px;
+      }
+
+      h1 {
+        margin: 0px;
+        padding: 20px;
+        background-color: #bbb;
+        border: 1px #777 solid;
+      }
+
+      ::-webkit-scrollbar { -webkit-appearance: none; width: 8px; }
+      ::-webkit-scrollbar-thumb { border-radius: 5px; background-color: rgba(0,0,0,.5); -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);}
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+
+      <div class="pane">
+        <h1>Header1</h1>
+        <div class="border">
+          <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item2</li>
+            <li>item3</li>
+          </ul>
+        </div>
+        <div class="error">Could not load...</div>
+        <h1>Footer1</h1>
+    </div>
+    <div class="pane">
+      <h1>Header2</h1>
+      <div class="border">
+        <ul>
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+          <li>item2</li>
+          <li>item3</li>
+        </ul>
+      </div>
+      <div class="error">Could not load with a lot more text Could not load with a lot more text Could not load with a lot more text Could not load with a lot more text Could not load with a lot more text Could not load with a lot more text Could not load with a lot more text Could not load with a lot more text </div>
+      <h1>Footer2</h1>
+  </div>
+  </div>
+  </body>
+</html>
